@@ -1,0 +1,21 @@
+public class RandomNim{
+  private int compPieces; //How many pieces the computer takes
+  public int play(int pieces)
+  {
+    if (pieces % 3 == 0) // checks to see if there is no remainder
+    {
+      compPieces = 2; // if there is no remainder take 2 pieces
+    }
+    if (pieces % 3 == 2) // checks to see if there is a remainder of 2
+    {
+      compPieces = 1; //if the remainder is 2 then take 1
+    }
+    if (pieces % 3 == 1) // checks to see if there is a remainder of 1
+    {
+      compPieces = 1; // if remainder is 1 take 1
+    } 
+    System.out.println("The computer takes "+ compPieces); // tells you how much it took
+    return compPieces; // returns the value
+  }
+  
+}
